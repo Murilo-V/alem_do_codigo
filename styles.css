@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/main_background.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: #7EFBC3;
+    text-align: center;
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+section {
+    background: linear-gradient(117deg, #001109 0%, #002816 100%);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section div {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(2);
+    gap: 40px;
+}
+
+section div img {
+    transition: 300ms;
+}
+
+section div img:hover {
+    transform: scale(1.1);
+}
+
+section p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 7px;
+    margin: 1rem;
+}
+
+.note {
+    color: #FFF;
+    margin-top: 7rem;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.mentor {
+    background-color: #001109;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+
+.mentor img {
+width: 20rem;
+}
+
+.mentor div p {
+    color: #fff; 
+    text-align: justify;
+    font-size: 18pt;
+    margin: 2rem 0 0 8rem;
+}
+
+.price {
+    background: linear-gradient(123deg, #4E896E 1.58%, #7EFBC3 100%);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price p {
+    font-weight: 500;
+    font-size: 24pt;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    border: 4px solid #001109;
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.price a {
+    color: #7EFBC3;
+    background-color: #002816;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 18pt;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin: 2rem 0 3rem 0;
+    border-radius: 5rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    main img {
+        width: 100% !important;
+    }
+
+    h1 {
+        font-size: 26pt;
+    }
+
+    h2 {
+        font-size: 22pt;
+    }
+
+    section div {
+        grid-template-columns: repeat(1, 220px);
+        grid-template-rows: repeat(8);
+        gap: 40px;
+    }
+
+    section p {
+        font-size: 22px;
+    }
+
+    .note {
+        font-size: 12px;
+    }
+
+    .mentor {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+
+    .mentor img {
+        width: 60%;
+        margin: 2rem 0;
+    }
+
+    .mentor div h2 {
+        margin: 0 !important;
+        text-align: center !important;
+    }
+
+    .mentor div p {
+        font-size: 12pt;
+        margin: 1rem 0;
+        text-align: left;
+    }
+
+    .price p {
+        font-size: 14pt;
+        width: 100%;
+    }
+
+    .price span {
+        font-size: 18pt !important;
+    }
+
+    .price a {
+        font-size: 12pt;
+    }
+}
